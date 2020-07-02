@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Volcanes</title>
+  <title>Listado de suscripciones</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
@@ -33,38 +33,37 @@
         class="w3-panel w3-center w3-opacity"
         style="padding: 128px 16px;"
       >
-        <h1 class="w3-xlarge">NATURALEZA</h1>
+      <h1 class="w3-xlarge">NATURALEZA</h1>
         <h1>SALVADOREÑA</h1>
 
         <div class="w3-padding-32">
           <div class="w3-bar w3-border">
-            <a href="index.html" class="w3-bar-item w3-button">Volcanes</a>
-            <a href="rios.html" class="w3-bar-item w3-button w3-light-grey"
+            <a href="index.php" class="w3-bar-item w3-button">Volcanes</a>
+            <a href="rios.php" class="w3-bar-item w3-button w3-light-grey"
               >Rios</a
             >
-            <a href="lagos.html" class="w3-bar-item w3-button">Lagos</a>
+            <a href="lagos.php" class="w3-bar-item w3-button">Lagos</a>
+            <a href="listado.php" class="w3-bar-item w3-button w3-light-grey"
+              >Listado de suscripciones</a>
              
           </div>
         </div>
       </header>
 
       <!-- Photo Grid -->
-      <div class="w3-row-padding " style="margin-bottom: 128px;">
-        <div class="w3-half">
-          <img src="img/volcanes/boqueron.jpg" style="width: 100%;" />
-          <img src="img/volcanes/conchagua.jpg" style="width: 100%;" />
-          <img src="img/volcanes/izalco.jpg" style="width: 100%;" />
+      <div class=" w3-center " style="padding-bottom: 100px;" >
+        
+        <?php
+            include("mostrar_listado.php");
+        ?>
           
-        </div>
+          
+          
+        
 
-        <div class="w3-half">
-          
-          <img src="img/volcanes/sanmiguel.jpg" style="width: 100%;" />
-          <img src="img/volcanes/santaana.jpg" style="width: 100%;" />
-          <img src="img/volcanes/sanvicente.jpg" style="width: 100%;" />
-          
-        </div>
+        
       </div>
+       
 
       <!-- End Page Content -->
     </div>

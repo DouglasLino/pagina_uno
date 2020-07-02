@@ -38,11 +38,13 @@
 
         <div class="w3-padding-32">
           <div class="w3-bar w3-border">
-            <a href="index.html" class="w3-bar-item w3-button">Volcanes</a>
-            <a href="rios.html" class="w3-bar-item w3-button w3-light-grey"
+            <a href="index.php" class="w3-bar-item w3-button">Volcanes</a>
+            <a href="rios.php" class="w3-bar-item w3-button w3-light-grey"
               >Rios</a
             >
-            <a href="lagos.html" class="w3-bar-item w3-button">Lagos</a>
+            <a href="lagos.php" class="w3-bar-item w3-button">Lagos</a>
+            <a href="listado.php" class="w3-bar-item w3-button w3-light-grey"
+              >Listado de suscripciones</a>
              
           </div>
         </div>
@@ -65,6 +67,28 @@
           
         </div>
       </div>
+
+             <!-- formulario -->
+
+             <div class="w3-content w3-panel w3-center " style="max-width: 1500px;">
+              <h1 class="w3-xlarge">¡Suscribete!</h1>
+      
+              
+      
+              <div class="container">
+                <form method="post">
+                  
+                  <input type="text" name="name" placeholder="Nombre completo">
+              
+                  <input type="email"  name="email" placeholder="Correo electronico">
+              
+                  <input type="submit" name="register">
+                </form>
+               <?php
+                  include("registro.php")
+               ?>
+              </div>
+            </div>
 
       <!-- End Page Content -->
     </div>
